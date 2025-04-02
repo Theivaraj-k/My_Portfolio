@@ -1,0 +1,157 @@
+<section class="section" id="projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Redux</span>
+                    </div>
+                    <p class="project-description">A full-featured e-commerce platform with product catalog, shopping cart, user authentication, and payment processing.</p>
+                    <div class="project-links">
+                        <a href="#">View Live</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Social Media Dashboard</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                    <p class="project-description">A comprehensive dashboard for social media analytics, content scheduling, and audience engagement monitoring.</p>
+                    <div class="project-links">
+                        <a href="#">View Live</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">AI-Powered Task Manager</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">OpenAI API</span>
+                    </div>
+                    <p class="project-description">A smart task management application that uses AI to prioritize tasks, suggest optimal scheduling, and automate routine activities.</p>
+                    <div class="project-links">
+                        <a href="#">View Live</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) rotateY(5deg);
+    box-shadow: 0 15px 30px rgba(42, 110, 250, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    background-color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(42, 110, 250, 0.8), rgba(5, 211, 247, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.tech-tag {
+    padding: 5px 10px;
+    background-color: rgba(42, 110, 250, 0.1);
+    border-radius: 20px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    color: var(--accent);
+}
+
+.project-description {
+    color: var(--secondary);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.project-links a {
+    color: var(--primary);
+    margin-right: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: var(--accent);
+}

@@ -1,0 +1,260 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theivaraj Portfolio</title>
+    <link rel="stylesheet" href="{% static 'myprofile/home.css'%}">
+</head>
+<body>
+
+
+
+<div class="particles" id="particles"></div>
+
+<!-- Navigation -->
+<!-- Navigation -->
+<nav>
+    <div class="container">
+        <div class="nav-left">
+            <div class="logo">MyPortfolio</div>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-btn">Home</a></li>
+                <li><a href="#about" class="nav-btn">About</a></li>
+                <li><a href="#skills" class="nav-btn">Skills</a></li>
+                <li><a href="#projects"class="nav-btn">Projects</a></li>
+                <li><a href="#contact"class="nav-btn">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Web Developer & <br>UI/UX Designer</h1>
+                <p>Creating innovative web solutions with cutting-edge technologies and modern design principles.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Replaced cube with HTML and CSS logos -->
+                    <div class="tech-logos">
+                        <div class="tech-logo">
+                            <svg viewBox="0 0 452 520" fill="none" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+                                <path fill="#e34f26" d="M41,460 L0,0 L451,0 L410,460 L225,512"></path>
+                                <path fill="#ef652a" d="M225,472 L375,431 L410,37 L225,37"></path>
+                                <path fill="#ebebeb" d="M225,208 L225,94 L312,94 L306,150 L225,150 M225,355 L225,268 L312,268 L300,338"></path>
+                                <path fill="#ffffff" d="M225,265 L225,325 L270,312 M228,94 L362,94 L367,35 L224,35 M227,208 L350,208 L345,150 L226,150"></path>
+                            </svg>
+                        </div>
+                        <div class="tech-logo">
+                            <svg viewBox="0 0 452 520" fill="none" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+                                <path fill="#264de4" d="M41,460 L0,0 L451,0 L410,460 L225,512"></path>
+                                <path fill="#2965f1" d="M225,472 L375,431 L410,37 L225,37"></path>
+                                <path fill="#ebebeb" d="M225,208 L225,94 L108,94 L112,150 L225,150 M225,355 L225,268 L142,268 L148,338"></path>
+                                <path fill="#ffffff" d="M225,265 L225,355 L300,328 L308,265 M360,94 L364,37 L225,37 L225,94 M312,208 L225,208 L225,150 L315,150"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm a passionate web developer with expertise in building responsive, user-friendly websites and applications. With a strong foundation in both frontend and backend development, I create seamless digital experiences that combine functionality with aesthetic appeal.</p>
+                    <p>My journey in web development started 5 years ago, and since then, I've been continuously learning and adapting to new technologies and methodologies. I believe in clean code, thoughtful architecture, and user-centered design.</p>
+                    <p>When I'm not coding, you'll find me exploring new design trends, contributing to open-source projects, or experimenting with emerging web technologies to stay at the cutting edge of the industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <p class="skill-description">Expert in HTML5, CSS3, JavaScript (ES6+), and modern frameworks like React and Vue.js. Creating responsive and interactive user interfaces.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <p class="skill-description">Proficient in Node.js, Express, MongoDB, and RESTful API development. Building scalable server-side applications.</p>
+                </div>
+               <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                    <p class="skill-description">Creating intuitive user interfaces and seamless user experiences. Skilled in Figma, Adobe XD, and design principles.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3 class="skill-title">Developer Tools</h3>
+                    <p class="skill-description">Experienced with Git, Webpack, Docker, CI/CD pipelines, and agile development methodologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-container">
+            <div class="project-card">
+              <div class="project-image-container">
+                <img src="/api/placeholder/400/250" alt="E-Commerce Platform" class="project-image" />
+                <div class="project-overlay">
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Redux</span>
+                </div>
+                <p class="project-description">A full-featured e-commerce platform with product catalog, shopping cart, user authentication, and payment processing.</p>
+                <div class="project-links">
+                  <a href="#">View Live</a>
+                  <a href="#">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image-container">
+                <img src="/api/placeholder/400/250" alt="Social Media Dashboard" class="project-image" />
+                <div class="project-overlay">
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Social Media Dashboard</h3>
+                <div class="project-tech">
+                  <span class="tech-tag">Vue.js</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                </div>
+                <p class="project-description">A comprehensive dashboard for social media analytics, content scheduling, and audience engagement monitoring.</p>
+                <div class="project-links">
+                  <a href="#">View Live</a>
+                  <a href="#">GitHub</a>
+                </div>
+              </div>
+            </div>
+           <div class="project-card">
+              <div class="project-image-container">
+                <img src="/api/placeholder/400/250" alt="AI-Powered Task Manager" class="project-image" />
+                <div class="project-overlay">
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">AI-Powered Task Manager</h3>
+                <div class="project-tech">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">OpenAI API</span>
+                </div>
+                <p class="project-description">A smart task management application that uses AI to prioritize tasks, suggest optimal scheduling, and automate routine activities.</p>
+                <div class="project-links">
+                  <a href="#">View Live</a>
+                  <a href="#">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>contact@yourportfolio.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 (123) 456-7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link">📱</a>
+                <a href="#" class="social-link">💼</a>
+                <a href="#" class="social-link">🐦</a>
+                <a href="#" class="social-link">📸</a>
+            </div>
+            <p class="footer-text">© 2025 Your Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mouse Trail Effect -->
+    <div class="cursor-trail" id="cursor-trail"></div>
+
+    <script src="myprofile/home.js"></script>
+</body>
+</html>
